@@ -150,4 +150,21 @@ alert(ingresados); */
 //Actividad 5
 
 
+while(opcion != "ESC"){
+    let opcion = prompt("Ingrese un numero");
+    switch(number){
+        case "1": alert ("Tomate");
+        break;
+        case "2": alert ("Papa");
+        break;
+        case "3": alert ("Carne");
+        break;
+        case "4":alert ("Pollo");
+        break;
+        default: alert("ERROR");
+        break;
+    }
+    opcion = prompt("Ingrese un numero");
+}
+
 
