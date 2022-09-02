@@ -1,28 +1,28 @@
 //Unidad 1
 //Actividad 1
 
-let name = "Guillermo";
+/* let name = "Guillermo";
 let surname = "Fernandez";
 let age = "36";
 console.log(name);
 console.log(surname);
-console.log(age);
+console.log(age); */
 
 //Actividad 2
-const ARGENTINA = "Argentina";
+/* const ARGENTINA = "Argentina";
 const BRASIL = "Brasil";
 const ESTADOS_UNIDOS = "Estados Unidos";
 const CHILE = "Chile";
-const PERU = "Peru";
+const PERU = "Peru"; */
 
 //Actividad 3
 
-let nameId =  "Guillermo";
+/* let nameId =  "Guillermo";
 let surnameId = "Fernandez";
 let countryId = "Argentina";
 
 let Id = "Name: " + nameId + " Surname: " + surnameId + " Country: " + countryId; 
-console.log(Id);
+console.log(Id); */
 
 //Actividad 4
 
@@ -149,8 +149,7 @@ alert(ingresados); */
 
 //Actividad 5
 
-
-while(opcion != "ESC"){
+/* while(opcion != "ESC"){
     let opcion = prompt("Ingrese un numero");
     switch(number){
         case "1": alert ("Tomate");
@@ -166,5 +165,36 @@ while(opcion != "ESC"){
     }
     opcion = prompt("Ingrese un numero");
 }
+ */
 
+//Unidad 4
+//Actividad 1
+
+/* function entrada(){
+    return prompt("Ingrese su usuario");
+}
+
+function procesamiento(valor){
+    return "Hola " + valor;
+}
+
+function salida(valor){
+    alert(valor);
+}
+
+salida(procesamiento(entrada())); */
+
+//Actividad 2
+
+/* function redondear(valor){
+    Math.round(valor);
+}
+
+for(let i=0;i<=5;i++){
+    let number = prompt("Digite un valor");
+    alert(redondear(number));
+}
+ */
+
+//Actividad 3
 
