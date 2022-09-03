@@ -234,3 +234,104 @@ while (entrada != 'ESC') {
     alert(validacion(entrada));
     entrada = prompt("INGRESAR CADENA");
 } */
+
+//Unidad 5
+//Actividad 1
+
+/* class Tienda{
+    constructor(nombre,direccion,propietario,rubro){
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.propietario = propietario;
+        this.rubro = rubro;
+    }
+    estaAbierto(hora){
+        if((hora>=8) && (hora<=12) || (hora>=15) && (hora<=19)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    esPropietario(nombre){
+        if(nombre == this.propietario){
+            return true;
+        }else{
+            return false;
+        }
+    }
+}
+
+let tiendaJuguetes = new Tienda("Pepelopo","Berutti 1255","Ramon","Jugueteria");
+ */
+
+//Actividad 2
+
+/* let ingresados = '';
+for(let i=0;i<=5;i++){
+    let tienda = new Tienda(prompt("NOMBRE"),
+                            prompt("DIRECCION"),
+                            prompt("PROPIETARIOS"),
+                            prompt("RUBRO"));
+    ingresados += "Tienda: " + tienda.nombre + " " +
+                "Direccion: "+ tienda.direccion + " " +
+                "Propietarios: " + tienda.propietario + " " +
+                "Rubro: " + tienda.rubro + "\n";
+}
+alert(ingresados); */
+
+//Actividad 3
+
+/* for(let i=0;i<3;i++){
+    let entrada = parseInt(prompt("A que hora quiere ir a la tienda"));
+    if(tiendaJuguetes.estaAbierto(entrada)){
+        alert("LA TIENDA ESTA ABIERTA A LAS "+entrada)
+    }else{
+        alert("LA TIENDA ESTA CERRADA A LAS "+entrada)
+    }
+} */
+
+//ACtividad 4
+
+/* for(let i=0;i<5;i++){
+    let entrada = prompt("Ingrese su nombre");
+    if(tiendaJuguetes.esPropietario(entrada)){
+        alert("ES PROPIETARIO");
+    }else{
+        alert("NO ES PROPIETARIO");
+    }
+} */
+
+//Actividad 5
+
+class Cliente{
+    constructor(nombre,presupuesto,tarjetaDescuento,telefono){
+        this.nombre = nombre;
+        this.presupuesto = presupuesto;
+        this.tarjetaDescuento = tarjetaDescuento;
+        this.telefono = telefono;
+    }
+    transferirDinero(valor){
+        if(this.presupuesto >= valor){
+            return true;
+        }else{
+            return false;
+        }
+    }
+}
+
+const cliente1 = new Cliente("Homero", 2000, true, "1234560");
+const cliente2 = new Cliente("Carlos", "1000", false, "21234560");
+const cliente3 = new Cliente("Barny", "50", false, "231234560");
+
+for(let i=0;i<5;i++){
+    let entrada = parseInt(prompt("Ingrese el valor "));
+    if (cliente1.transferirDinero(entrada)){
+        alert("EL CLIENTE " + cliente1.nombre+ " TE PUEDE PAGAR "+entrada);
+    }
+    if (cliente2.transferirDinero(entrada)){
+        alert("EL CLIENTE " + cliente2.nombre+ " TE PUEDE PAGAR "+entrada);
+    }
+    if (cliente3.transferirDinero(entrada)){
+        alert("EL CLIENTE " + cliente3.nombre+ " TE PUEDE PAGAR "+entrada);
+    }
+}
