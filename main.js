@@ -198,3 +198,39 @@ for(let i=0;i<=5;i++){
 
 //Actividad 3
 
+/* function impuesto(precio,porcentaje){
+    return precio * (1+ porcentaje / 100); 
+}
+
+for(let i=0;i<=5;i++){
+    let resultado = impuesto(prompt("Digite un precio"),prompt("Digite el porcentaje del impuesto"));
+    alert(resultado);
+} */
+
+//Actividad 4
+
+/* const valorDolar = 300;
+
+function cotizarDolar(pesos){
+    dolares = pesos / valorDolar;
+    alert("Serian " + dolares + " dolares");
+}
+
+function cotizarPesos(dolares){
+    pesos = dolares * valorDolar;
+    alert("Son " + pesos + " pesos");
+}
+
+cotizarDolar(parseInt(prompt("Digite la cantidad de pesos que tiene")));
+cotizarPesos(parseInt(prompt("Digite la canitidad de dolares que tiene"))); */
+
+//Actividad 5
+
+/* function validacion(cadena){
+    return cadena != '';
+}
+let entrada =  prompt("INGRESAR CADENA");
+while (entrada != 'ESC') {
+    alert(validacion(entrada));
+    entrada = prompt("INGRESAR CADENA");
+} */
