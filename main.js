@@ -303,7 +303,7 @@ alert(ingresados); */
 
 //Actividad 5
 
-class Cliente{
+/* class Cliente{
     constructor(nombre,presupuesto,tarjetaDescuento,telefono){
         this.nombre = nombre;
         this.presupuesto = presupuesto;
@@ -334,4 +334,81 @@ for(let i=0;i<5;i++){
     if (cliente3.transferirDinero(entrada)){
         alert("EL CLIENTE " + cliente3.nombre+ " TE PUEDE PAGAR "+entrada);
     }
+} */
+
+//Unidad 6
+//Actividad 1
+
+/* const equipo = ["Guillermo","Florencia","Morcilla","Milo"];
+
+for (let i=0;i<equipo.length;i++){
+    alert("El integrante numero " + i + " es " + equipo[i]);
+} */
+
+//Actividad 2
+
+/* const equipo = [];
+
+let entrada = prompt("Ingrese un integrante del equipo");
+while(entrada !== "ESC"){
+    equipo.push(entrada);
+    entrada = prompt("Ingrese un integrante del equipo");
 }
+
+for (let i=0;i<equipo.length;i++){
+    alert("El integrante numero " + i + " es " + equipo[i]);
+} */
+
+//Actividad 3
+
+class Jugador{
+    constructor(nombre,nCamiseta,edad,lesionado){
+        this.nombre = nombre;
+        this.nCamiseta = nCamiseta;
+        this.edad = edad;
+        this.lesionado = lesionado;
+    }
+}
+
+const roberto = new Jugador ("Roberto",25,18,false);
+const jona = new Jugador ("Jonathan",36,09,false);
+const guillermo = new Jugador ("Guillermo",32,36,true);
+const jorge = new Jugador("Jorge",14,30,false);
+const raul = new Jugador("Raul",74,25,false);
+
+const equipo = [];
+
+equipo.push(roberto);
+equipo.push(jona);
+equipo.push(guillermo);
+equipo.push(jorge);
+equipo.push(raul);
+
+console.log(equipo);
+
+//Actividad 4
+
+    let buscarJugador = (equipo,entrada) =>{
+        let busqueda = equipo.find(jugador => jugador.nombre === entrada);
+        if(busqueda === undefined){
+            alert("No existe el jugador");
+        }
+        else{
+            alert(busqueda.nombre + " tiene " + busqueda.edad + " años " + ", su camiseta es la " + busqueda.nCamiseta);
+        }
+}
+
+/* buscarJugador(equipo,prompt("Escribe el jugador que deseas buscar")); */
+
+//Actividad 5
+
+let filtroJugadores = (equipo,entrada)=>{
+    let filtro = equipo.filter(jugador=>jugador.edad === entrada);
+    if(filtro === undefined){
+        alert("No hay jugador con esa edad");
+    }else{
+        console.log(filtro);
+    }
+}
+
+filtroJugadores(equipo,parseInt(prompt("Digite una edad ")));
