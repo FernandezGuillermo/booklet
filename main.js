@@ -387,13 +387,10 @@ equipo.push(raul);
 console.log(equipo); */
 
 //Actividad 4
-<<<<<<< HEAD
 /* 
     let buscarJugador = (equipo,entrada) =>{
-=======
 
     /* let buscarJugador = (equipo,entrada) =>{
->>>>>>> 7749419d878d6b692549d4945c18b206cb7c8ab4
         let busqueda = equipo.find(jugador => jugador.nombre === entrada);
         if(busqueda === undefined){
             alert("No existe el jugador");
@@ -406,13 +403,10 @@ console.log(equipo); */
 /* buscarJugador(equipo,prompt("Escribe el jugador que deseas buscar")); */
 
 //Actividad 5
-<<<<<<< HEAD
+
 /* 
 let filtroJugadores = (equipo,entrada)=>{
-=======
-
 /* let filtroJugadores = (equipo,entrada)=>{
->>>>>>> 7749419d878d6b692549d4945c18b206cb7c8ab4
     let filtro = equipo.filter(jugador=>jugador.edad === entrada);
     if(filtro === undefined){
         alert("No hay jugador con esa edad");
@@ -426,26 +420,22 @@ filtroJugadores(equipo,parseInt(prompt("Digite una edad "))); */
 //Unidad 8
 //Actividad 1
 
-<<<<<<< HEAD
 /* let div = document.getElementById("div");
 
 const ciudades = ["Buenos Aires","New York","Londres","Barcelona"];
 
 for(const ciudad of ciudades){
-=======
 let div = document.getElementById("div")
 
 /*let ciudades = ["Esperanza","Santa Fe","Carlos Pellegrini","Maria Juana"];
 
 for (const ciudad of ciudades){
->>>>>>> 7749419d878d6b692549d4945c18b206cb7c8ab4
+
     let h2 = document.createElement('h2');
     h2.innerHTML = ciudad;
     document.body.appendChild(h2);
 } */
 
-<<<<<<< HEAD
-=======
 //Actividad 2
 
 /* const tareas = []; 
