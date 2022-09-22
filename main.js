@@ -361,7 +361,7 @@ for (let i=0;i<equipo.length;i++){
 
 //Actividad 3
 
-class Jugador{
+/* class Jugador{
     constructor(nombre,nCamiseta,edad,lesionado){
         this.nombre = nombre;
         this.nCamiseta = nCamiseta;
@@ -384,11 +384,11 @@ equipo.push(guillermo);
 equipo.push(jorge);
 equipo.push(raul);
 
-console.log(equipo);
+console.log(equipo); */
 
 //Actividad 4
 
-    let buscarJugador = (equipo,entrada) =>{
+    /* let buscarJugador = (equipo,entrada) =>{
         let busqueda = equipo.find(jugador => jugador.nombre === entrada);
         if(busqueda === undefined){
             alert("No existe el jugador");
@@ -396,13 +396,13 @@ console.log(equipo);
         else{
             alert(busqueda.nombre + " tiene " + busqueda.edad + " años " + ", su camiseta es la " + busqueda.nCamiseta);
         }
-}
+} */
 
 /* buscarJugador(equipo,prompt("Escribe el jugador que deseas buscar")); */
 
 //Actividad 5
 
-let filtroJugadores = (equipo,entrada)=>{
+/* let filtroJugadores = (equipo,entrada)=>{
     let filtro = equipo.filter(jugador=>jugador.edad === entrada);
     if(filtro === undefined){
         alert("No hay jugador con esa edad");
@@ -411,4 +411,18 @@ let filtroJugadores = (equipo,entrada)=>{
     }
 }
 
-filtroJugadores(equipo,parseInt(prompt("Digite una edad ")));
+filtroJugadores(equipo,parseInt(prompt("Digite una edad "))); */
+
+//Unidad 8
+//Actividad 1
+
+const ciudades = [  "Springfield",
+                    "Shelbyville",
+                    "Capital City",
+                    "Cypress Creek",
+                    "Ogdenville"];
+for (const ciudad of ciudades) {
+    let h2 = document.createElement('h2');
+    h2.innerHTML = ciudad;
+    document.body.appendChild(h2);
+}
