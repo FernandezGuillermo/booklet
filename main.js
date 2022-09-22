@@ -387,8 +387,13 @@ equipo.push(raul);
 console.log(equipo); */
 
 //Actividad 4
+<<<<<<< HEAD
 /* 
     let buscarJugador = (equipo,entrada) =>{
+=======
+
+    /* let buscarJugador = (equipo,entrada) =>{
+>>>>>>> 7749419d878d6b692549d4945c18b206cb7c8ab4
         let busqueda = equipo.find(jugador => jugador.nombre === entrada);
         if(busqueda === undefined){
             alert("No existe el jugador");
@@ -401,8 +406,13 @@ console.log(equipo); */
 /* buscarJugador(equipo,prompt("Escribe el jugador que deseas buscar")); */
 
 //Actividad 5
+<<<<<<< HEAD
 /* 
 let filtroJugadores = (equipo,entrada)=>{
+=======
+
+/* let filtroJugadores = (equipo,entrada)=>{
+>>>>>>> 7749419d878d6b692549d4945c18b206cb7c8ab4
     let filtro = equipo.filter(jugador=>jugador.edad === entrada);
     if(filtro === undefined){
         alert("No hay jugador con esa edad");
@@ -416,13 +426,62 @@ filtroJugadores(equipo,parseInt(prompt("Digite una edad "))); */
 //Unidad 8
 //Actividad 1
 
+<<<<<<< HEAD
 /* let div = document.getElementById("div");
 
 const ciudades = ["Buenos Aires","New York","Londres","Barcelona"];
 
 for(const ciudad of ciudades){
+=======
+let div = document.getElementById("div")
+
+/*let ciudades = ["Esperanza","Santa Fe","Carlos Pellegrini","Maria Juana"];
+
+for (const ciudad of ciudades){
+>>>>>>> 7749419d878d6b692549d4945c18b206cb7c8ab4
     let h2 = document.createElement('h2');
     h2.innerHTML = ciudad;
     document.body.appendChild(h2);
 } */
 
+<<<<<<< HEAD
+=======
+//Actividad 2
+
+/* const tareas = []; 
+
+for(let i=0;i<5;i++){
+    let tarea = prompt("Digite una tarea");
+    tareas.push(tarea);
+}
+
+let ul = document.createElement('ul');
+let inner ='';
+for (const tarea of tareas){
+    inner += `<li>${tarea}</li>`;
+}
+ul.innerHTML = inner;
+document.body.appendChild(ul); */
+
+//Actividad 3
+
+//Declarar un array de países -- check
+//crear una etiqueta select.  -- check
+//Por cada país concatenar una etiqueta option a una template de caracteres, asignando el resultado al interior de la etiqueta padre. //
+//El value de cada opción es la posición de la ciudad en la colección. Por último, agregar el select al body.
+
+/* let paises = ["Argentina","Brasil","Chile","Uruguay"];
+
+let select = document.createElement('select');
+
+for (let index = 0;index < paises.length; index++){
+    select.innerHTML += `<option value='${index}'>${paises[index]}</option>`;
+}
+
+document.body.appendChild(select); */
+
+//Actividad 4
+
+
+
+>>>>>>> 7749419d878d6b692549d4945c18b206cb7c8ab4
