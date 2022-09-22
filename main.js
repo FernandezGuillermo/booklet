@@ -416,13 +416,51 @@ filtroJugadores(equipo,parseInt(prompt("Digite una edad "))); */
 //Unidad 8
 //Actividad 1
 
-const ciudades = [  "Springfield",
-                    "Shelbyville",
-                    "Capital City",
-                    "Cypress Creek",
-                    "Ogdenville"];
-for (const ciudad of ciudades) {
+let div = document.getElementById("div")
+
+/*let ciudades = ["Esperanza","Santa Fe","Carlos Pellegrini","Maria Juana"];
+
+for (const ciudad of ciudades){
     let h2 = document.createElement('h2');
     h2.innerHTML = ciudad;
     document.body.appendChild(h2);
+} */
+
+//Actividad 2
+
+/* const tareas = []; 
+
+for(let i=0;i<5;i++){
+    let tarea = prompt("Digite una tarea");
+    tareas.push(tarea);
 }
+
+let ul = document.createElement('ul');
+let inner ='';
+for (const tarea of tareas){
+    inner += `<li>${tarea}</li>`;
+}
+ul.innerHTML = inner;
+document.body.appendChild(ul); */
+
+//Actividad 3
+
+//Declarar un array de países -- check
+//crear una etiqueta select.  -- check
+//Por cada país concatenar una etiqueta option a una template de caracteres, asignando el resultado al interior de la etiqueta padre. //
+//El value de cada opción es la posición de la ciudad en la colección. Por último, agregar el select al body.
+
+/* let paises = ["Argentina","Brasil","Chile","Uruguay"];
+
+let select = document.createElement('select');
+
+for (let index = 0;index < paises.length; index++){
+    select.innerHTML += `<option value='${index}'>${paises[index]}</option>`;
+}
+
+document.body.appendChild(select); */
+
+//Actividad 4
+
+
+
