@@ -470,7 +470,36 @@ for (let index = 0;index < paises.length; index++){
 
 document.body.appendChild(select); */
 
-//Actividad 4
+//Actividad 4 - Actividad 5
 
+/* class Cantante { //creo clase cantante
+    constructor(nombre, id) {
+        this.nombre = nombre;
+        this.id = id;
+    }
+}
 
+//Instacio 5 cantantes 
+const roberto = new Cantante("Roberto", 1);
+const guillermo = new Cantante("Guillermo", 2);
+const florencia = new Cantante("Florencia", 3);
+const elisa = new Cantante("Elisa", 4);
+const carolina = new Cantante("Carolina", 5);
 
+//creo array banda
+const banda = [];
+
+//Agrego al array los cantantes
+banda.push(roberto);
+banda.push(guillermo);
+banda.push(florencia);
+banda.push(elisa);
+banda.push(carolina);
+
+for (const cantante of banda) {
+    let div = document.createElement('div');
+    div.innerHTML = `<h2>${cantante.nombre}</h2>
+    <button id='${cantante.id}'>Contratar</button>
+    <hr>`;
+    document.body.appendChild(div);
+} */
