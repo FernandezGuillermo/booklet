@@ -503,3 +503,81 @@ for (const cantante of banda) {
     <hr>`;
     document.body.appendChild(div);
 } */
+
+//Unidad 9
+//Actividad 1 
+
+/* let div = document.createElement('div');
+div.innerHTML = `
+                <button id='btnNucleo'>Destruccion</button>
+                `;
+
+document.body.appendChild(div);
+
+let botonNucleo = document.getElementById('btnNucleo');
+
+botonNucleo.addEventListener("click",()=>{
+    console.log("Hice click");
+}) */
+
+//Actividad 2
+
+/* const asignaturas = ["Matematica","Geometria","Lengua","Ciencias Sociales"];
+
+let select = document.createElement('select');
+
+for(let index =0;index<asignaturas.length;index++){
+    select.innerHTML += `
+                        <option value='${index}'>${asignaturas[index]}</option>
+                        `
+}
+
+document.body.appendChild(select);
+
+let div = document.createElement('div');
+
+select.addEventListener("change",function(e){
+    div.innerHTML = asignaturas[e.target.value];
+    document.body.appendChild(div); 
+}) */
+
+//Actividad 3
+/* class Estudiante{
+    constructor(nombre,apellido,email){
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.email = email;
+    }
+}
+
+const estudiantes = [];
+
+let divFormulario = document.createElement('div');
+
+divFormulario.innerHTML += `
+                            <form id="formulario">
+                                <input type="text" name="nombre">Nombre</input>
+                                <input type="text" name="apellido">Apellido</input>
+                                <input type="e-mail" name="e-mail">E-mail</input>
+                                <button type="submit" value="Ingresar">Ingresar</button>
+                            </form>
+                        `
+
+document.body.appendChild(divFormulario);
+
+let miFormulario = document.getElementById("formulario");
+miFormulario.addEventListener("submit",validarFormulario);
+
+function validarFormulario(e){
+    e.preventDefault();
+    const inputs = e.target.children;
+    console.log("Formulario Enviado");
+    miFormulario = e.target;
+    estudiantes.push(new Estudiante({ nombre: inputs[0].value, apellido: inputs[1].value, email: inputs[2].value }));
+    document.body.append('Alumno registrado');
+}
+ */
+
+
+
+
